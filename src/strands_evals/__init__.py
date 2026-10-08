@@ -3,6 +3,7 @@ from .batch import evaluate_sessions
 from .case import Case
 from .eval_task_handler import EvalTaskHandler, TracedHandler, eval_task
 from .evaluation_data_store import EvaluationDataStore
+from .evaluators.deterministic.structured_output import StructuredOutputReport
 from .experiment import Experiment
 from .local_file_task_result_store import LocalFileTaskResultStore
 from .providers import SessionFilter
@@ -18,6 +19,7 @@ __all__ = [
     "LocalFileTaskResultStore",
     "EvaluationDataStore",
     "EvaluationReport",
+    "StructuredOutputReport",
     "EvalTaskHandler",
     "TracedHandler",
     "eval_task",
